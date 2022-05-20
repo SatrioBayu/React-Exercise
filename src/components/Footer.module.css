@@ -1,0 +1,17 @@
+.footerContainer{
+    background-color: #716844;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerImageRight{
+    width: 6rem;
+    height: 4rem;
+}
+
+.footerImageLeft{
+    width: 4rem;
+    height: 4rem;
+}
