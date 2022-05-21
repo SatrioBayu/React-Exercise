@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Login from "./components/Login";
+import Protected from "./components/Protected";
 
 function App() {
   return (
@@ -13,7 +15,15 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/animeList" element={<Card />} />
+          <Route
+            path="/animeList"
+            element={
+              <Protected>
+                <Card />
+              </Protected>
+            }
+          />
+          <Route path="/login" element={<Login />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />

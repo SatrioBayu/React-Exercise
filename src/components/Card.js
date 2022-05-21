@@ -26,7 +26,7 @@ const Card = () => {
           <h3 className="display-4">Anime List</h3>
         </div>
       )}
-      <div className={`row row-cols-1 row-cols-md-6 g-4 p-4`}>
+      <div className={`row row-cols-1 row-cols-md-5 g-4 p-4`}>
         {animes &&
           animes.map((anime) => (
             <div className={`col ${style.fade}`} key={anime.id}>

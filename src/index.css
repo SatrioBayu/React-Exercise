@@ -14,3 +14,6 @@ code {
   height: 100vh;
   align-items: center;
 }
+a{
+  text-decoration: none;
+}
