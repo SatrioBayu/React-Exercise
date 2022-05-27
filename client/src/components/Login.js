@@ -13,7 +13,7 @@ const Login = () => {
   useEffect(() => {
     document.title = "Login Page";
     token ? setIsLoggedIn(true) : setIsLoggedIn(false);
-  }, [isLoggedIn]);
+  });
 
   const handleLogin = (e) => {
     e.preventDefault();

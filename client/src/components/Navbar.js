@@ -14,7 +14,7 @@ const Navbar = () => {
     e.preventDefault();
     localStorage.removeItem("token");
     setIsLoggedIn(false);
-    navigate("/login");
+    navigate("/");
   };
 
   useEffect(() => {
@@ -69,7 +69,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link onClick={() => handleClick("Anime List")} className={`nav-link ${title === "Anime List" || title === "Login Page" ? "active" : ""}`} to="/animeList">
+                  <Link onClick={() => handleClick("Anime List")} className={`nav-link ${title === "Anime List" ? "active" : ""}`} to="/animeList">
                     Anime List
                   </Link>
                 </li>
